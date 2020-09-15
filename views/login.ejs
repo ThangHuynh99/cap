@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meeting Planner</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../lib/css/log.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Login-box">
+        <div class="row">
+          <div class="col-md-6 login-right">
+            <h2 style="color: black">Login</h2>
+            -- login form
+            <form action="login_submit.php" method="post">
+              <div class="form-group">
+                <label style="color: black">Username</label>
+                <input type="text" name="user" class="form-control" required/>
+              </div>
+              <div class="form-group">
+                <label style="color: black">Password</label>
+                <input type="password" name="password" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <input type="checkbox" name="remember" />
+                <label style="color: black">Remember me</label>
+              </div>
+              <input type="submit" name="submit" value="submit" />
+              <button type="onclick">
+                <a href="/register">Register</a>
+              </button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
